@@ -188,17 +188,7 @@ nav .sign-up {
     flex-basis: 100%;
     padding: 2rem 2rem;
 }
-.data{
-    flex-basis: 50%;
-    flex-grow: 1; 
-    text-transform: capitalize;
-    padding:0 0.5rem;
-    line-height: 28px;
-    border-radius: 20px;
-    /* margin: 0.3rem 2rem;  */
-    width: 50%;
 
-}
 .text-image>img{
     width: 100%;
     flex-basis: 50%;
@@ -208,12 +198,15 @@ nav .sign-up {
 
 .text{
     background-color: #DAF7FF;
-    /* flex-basis: 10%;
-    flex-grow: 1; */
-    padding: 1rem 1rem;
-    line-height: 28px;
+    text-transform: capitalize;
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: 5rem 5rem;
+    line-height: 30px;
     border-radius: 20px;
-    /* margin: 0.3rem 2rem; */
+    margin: 0.3rem 2rem; 
+    width: 50%;
+
 }
 
 .text>p,
@@ -562,7 +555,9 @@ nav .sign-up {
     .cash-flow {
         justify-content: space-around;
     }
-
+.benefit-data>.image-b{
+    width: 100%;
+}
     .article img {
         width: 100%;
     }
@@ -577,6 +572,9 @@ nav .sign-up {
     }
     .problem>.text{
         width: 100%;
+    }
+    .problem>.text{
+        padding:1rem 1rem ;
     }
 
 }

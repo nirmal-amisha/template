@@ -201,10 +201,10 @@ nav .sign-up {
     text-transform: capitalize;
     flex-basis: 50%;
     flex-grow: 1;
-    padding: 5rem 5rem;
-    line-height: 30px;
+    padding: 1rem 3rem;
+    line-height: 35px;
     border-radius: 20px;
-    margin: 0.3rem 2rem; 
+    margin: 0.3rem 2rem;
     width: 50%;
 
 }
@@ -386,7 +386,7 @@ nav .sign-up {
 .arrow i {
     border: 2px solid white;
     border-radius: 50px;
-    padding: 1.2rem;
+    padding: 2rem;
 }
 
 .account {
@@ -569,6 +569,9 @@ nav .sign-up {
 
     .list-of-images {
         flex-direction: column;
+    }
+    .benefit-data>.image-b{
+        width: 100%;
     }
     .problem>.text{
         width: 100%;

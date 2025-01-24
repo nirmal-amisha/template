@@ -62,19 +62,19 @@ nav .sign-up {
 
 .content {
     font-weight: 600;
-    text-align: center;
-    align-items: center;
-    padding: 5rem 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-.content h1 {
-    padding: 0 1rem;
+.cont{
+    text-align: center;
+    align-items: center;
+}
+.content>.cont>h1 {
+    padding: 0 0.5rem;
     font-size: 60px;
 }
 
-.content p {
-    padding: 0 10rem;
+.content>.cont>p {
+    padding: 0.5rem 1rem;
     margin: 1rem 0;
     font-size: 20px;
     line-height: 28px;
@@ -82,20 +82,18 @@ nav .sign-up {
     color: gray;
 }
 
-.content .join-list {
+.content>.cont>.join-list>span{
     background-color: black;
     color: white;
     border-radius: 30px;
-    width: 200px;
-    margin-left: 40%;
-    padding: 0.8rem;
+    padding: 1rem;
 }
 
 .list-of-images {
     display: flex;
     justify-content: space-around;
     align-items: end;
-    padding: 1rem;
+    padding: 2rem 1rem;
     gap: 10px;
 
 }
@@ -104,22 +102,21 @@ nav .sign-up {
     width: 100%;
 }
 
-.four-counter {
+.four-counter{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 2rem 2.5rem;
+    margin: 1rem 0.8rem;
     background-color: #F5F5F7;
     border-radius: 10px;
+    padding: 1rem 2rem;
 }
 
-.counter {
-    padding: 1rem 0;
-    width: 15%;
-    font-size: 16px;
+.counter{
+    padding:0.5rem 0.1rem;
 }
 
-.counter h2 {
+.counter>h2 {
     font-size: 24px;
     color: blue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -164,7 +161,7 @@ nav .sign-up {
     padding: 1rem;
 }
 
-.model p {
+.model>p {
     /* margin: 1rem 0; */
     font-size: 20px;
     line-height: 28px;
@@ -191,22 +188,32 @@ nav .sign-up {
     flex-basis: 100%;
     padding: 2rem 2rem;
 }
+.data{
+    flex-basis: 50%;
+    flex-grow: 1; 
+    text-transform: capitalize;
+    padding:0 0.5rem;
+    line-height: 28px;
+    border-radius: 20px;
+    /* margin: 0.3rem 2rem;  */
+    width: 50%;
 
-.text-image {
-    flex-basis: 40%;
+}
+.text-image>img{
+    width: 100%;
+    flex-basis: 50%;
     flex-grow: 1;
     text-align: center;
 }
 
-.text {
+.text{
     background-color: #DAF7FF;
-    flex-basis: 40%;
-    flex-grow: 1;
-    text-transform: capitalize;
-    padding: 2rem 3rem;
+    /* flex-basis: 10%;
+    flex-grow: 1; */
+    padding: 1rem 1rem;
     line-height: 28px;
     border-radius: 20px;
-    margin: 0.3rem 2rem;
+    /* margin: 0.3rem 2rem; */
 }
 
 .text>p,
@@ -214,10 +221,10 @@ nav .sign-up {
     padding: 0.5rem 0;
 }
 
-
 .industry {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 2rem 2rem;
 }
 
@@ -246,25 +253,22 @@ nav .sign-up {
     height: 200px;
     margin: 1rem;
     flex-basis: 1;
-
 }
 
 .card-box img {
     height: 200px;
 }
 
-
 .arrow-move {
     margin-top: 50px;
     text-align: center;
-
 }
 
 .arrow-move i {
     text-align: center;
     border: 2px solid black;
-    border-radius: 30px;
-    padding: 1rem;
+    border-radius: 50px;
+    padding: 1.2rem;
 }
 
 .article {
@@ -326,7 +330,7 @@ nav .sign-up {
     flex-grow: 1;
 }
 
-.context {
+.context {  
     padding: 0 2rem;
     flex-basis: 40%;
     flex-grow: 1;
@@ -388,8 +392,8 @@ nav .sign-up {
 
 .arrow i {
     border: 2px solid white;
-    border-radius: 30px;
-    padding: 1rem;
+    border-radius: 50px;
+    padding: 1.2rem;
 }
 
 .account {
@@ -513,28 +517,7 @@ nav .sign-up {
 }
 
 @media(max-width:1030px) {
-    /* *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    } */
-    /* .model{
-        width: 100%;
-    }
-    .model .problem {
-        flex-direction: column;
-        gap: 10px;
-        justify-content: center;
-        margin: 65px;
-    }
-
-    .model .problem .text {
-        width: 100%;
-        margin: 10px 0;
-    }
-    .problem .text-image img{
-        width: 100%;
-    } */
+    
 
 
 }
@@ -588,93 +571,12 @@ nav .sign-up {
 }
 
 @media (max-width:430px) {
-    header {
-        width: 100%;
-        align-items: center;
-        display: none;
-    }
-
-
-    .content h1 {
-        /* padding: 0; */
-        width: 100%;
-        align-items: center;
-        text-align: start;
-
-    }
-
-    .content p {
-        padding: 0;
-        width: 100%;
-
-    }
 
     .list-of-images {
-        /* display: flex;
-        flex-wrap: wrap; */
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .four-counter {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .counter {
-        width: 100%;
-    }
-
-    .achivement>.sec2>p {
-        width: 100%;
-        padding: 0%;
-    }
-
-    .cash-flow {
         flex-direction: column;
     }
-
-    .model>p {
-        padding: 0;
-    }
-
-    .problem .text-image img {
+    .problem>.text{
         width: 100%;
-    }
-
-    .industry {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card-four>.card-box>img {
-        padding: 0;
-        width: 100%;
-    }
-
-    .article .img {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .benefit-data {
-        flex-direction: column;
-    }
-
-    .benefit-data>.image-b>img {
-        width: 100%;
-    }
-
-    /* .benefit-data>.context >.no-text>
-{
-    padding: 0%;
-    width: 100%;
-} */
-    .benefits>.benefit-data>.context>.no-text {
-        /* width: 100%; */
-        /* padding: 0%;  */
-        display: inline-block;
     }
 
 }
